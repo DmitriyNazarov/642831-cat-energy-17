@@ -1,0 +1,26 @@
+.social {
+  margin-top: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.social__link {
+  font-size: 0;
+
+  & path,
+  & circle {
+    fill: #666666;
+  }
+
+  &:hover path,
+  &:hover circle,
+  &:focus path,
+  &:focus circle {
+    fill: #68b738;
+  }
+
+  &:active path,
+  &:active circle {
+    opacity: 0.3;
+  }
+}
