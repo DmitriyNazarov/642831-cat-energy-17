@@ -1,0 +1,26 @@
+.copyright__author {
+  .clicked();
+  font-family: @font-second;
+  font-size: 16px;
+  line-height: 16px;
+  color: @text-gray;
+}
+
+.copyright__logo {
+  display: block;
+  width: 27px;
+  height: 34px;
+
+  & path {
+    fill: #666666;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: #68b738;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
+}

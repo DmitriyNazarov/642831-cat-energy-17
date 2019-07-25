@@ -1,0 +1,66 @@
+.promo {
+  min-height: 480px;
+  margin-bottom: 22px;
+  padding: 30px 20px 0;
+  background-image:
+    url("../img/index-background-mobile@1x.jpg"),
+    linear-gradient(#65a93c 305px, @bg-light 305px);
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.promo__title {
+  .wrap();
+  margin-bottom: 20px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  text-align: center;
+  color: @text-light;
+}
+
+.promo__slogan {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: @text-light;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    position: relative;
+    width: 708px;
+    min-height: 807px;
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 90px;
+    background-image: none;
+  }
+
+  .promo__title {
+    width: 480px;
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: @text-dark;
+  }
+
+  .promo__slogan {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    color: @text-dark;
+    text-align: left;
+  }
+
+  .promo__btn {
+    position: absolute;
+    top: 226px;
+    width: 245px;
+  }
+}

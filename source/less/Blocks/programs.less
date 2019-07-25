@@ -1,0 +1,44 @@
+.programs {
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.programs__list {
+  .list-reset();
+}
+
+.programs__item {
+  margin-bottom: 20px;
+  padding: 30px 21px 20px;
+  background-color: @bg-dark;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.programs__item-title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding-left: 92px;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.programs__description {
+  margin-bottom: 20px;
+  padding-bottom: 25px;
+  font-family: @font-second;
+  color: @text-gray;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.programs__link {
+  .clicked();
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: @text-dark;
+}
