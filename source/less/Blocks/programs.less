@@ -1,15 +1,15 @@
 .programs {
   margin-bottom: 20px;
-  padding: 0 20px;
+  padding: 0 6.25%;
 }
 
 .programs__list {
-  .list-reset();
+  .list-reset;
 }
 
 .programs__item {
   margin-bottom: 20px;
-  padding: 30px 21px 20px;
+  padding: 30px 7.14% 0;
   background-color: @bg-dark;
 
   &:last-child {
@@ -28,7 +28,7 @@
 }
 
 .programs__description {
-  margin-bottom: 20px;
+  margin: 0;
   padding-bottom: 25px;
   font-family: @font-second;
   color: @text-gray;
@@ -36,9 +36,12 @@
 }
 
 .programs__link {
-  .clicked();
+  display: block;
+  padding: 20px 0;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: @text-dark;
+
+  .clicked;
 }

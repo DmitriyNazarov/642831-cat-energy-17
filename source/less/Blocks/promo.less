@@ -1,7 +1,9 @@
 .promo {
+  display: flex;
+  flex-direction: column;
   min-height: 480px;
   margin-bottom: 22px;
-  padding: 30px 20px 0;
+  padding: 30px 6.25% 0;
   background-image:
     url("../img/index-background-mobile@1x.jpg"),
     linear-gradient(#65a93c 305px, @bg-light 305px);
@@ -10,7 +12,6 @@
 }
 
 .promo__title {
-  .wrap();
   margin-bottom: 20px;
   font-size: 36px;
   line-height: 36px;
@@ -27,6 +28,15 @@
   text-transform: uppercase;
   text-align: center;
   color: @text-light;
+}
+
+.promo__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.promo__btn {
+  margin-top: auto;
 }
 
 @media (min-width: @tablet-width) {
