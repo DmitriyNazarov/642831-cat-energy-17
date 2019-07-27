@@ -45,3 +45,64 @@
 
   .clicked;
 }
+
+@media (min-width: @tablet-width) {
+  .programs {
+    padding-right: 3.91%;
+    margin-bottom: 50px;
+    padding-left: 3.91%;
+  }
+
+  .programs__item {
+    margin-bottom: 30px;
+    padding-top: 80px;
+    padding-right: calc(7.49% + 230px);
+    padding-bottom: 60px;
+    padding-left: 7.49%;
+
+    &--pro {
+      padding-right: calc(7.49% + 258px);
+    }
+  }
+
+  .programs__item-title {
+    padding-left: 0;
+    font-size: 36px;
+  }
+
+  .programs__description {
+    margin-bottom: 60px;
+    padding-bottom: 0;
+    border: none;
+  }
+
+  .programs__link {
+    padding: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programs {
+    margin-bottom: 80px;
+    padding-right: 7.64%;
+    padding-left: 7.64%;
+  }
+
+  .programs__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programs__item {
+    width: 46.72%;
+    margin-bottom: 0;
+    padding-right: 4.26%;
+    padding-left: 4.26%;
+  }
+
+  .programs__item-title {
+    padding-left: 164px;
+  }
+}

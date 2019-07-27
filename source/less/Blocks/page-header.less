@@ -21,14 +21,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 708px;
-    margin: 0 auto;
     margin-bottom: 60px;
     padding-top: 24px;
+    padding-right: 3.91%;
+    padding-left: 3.91%;
   }
 
   .page-header__top-part {
     height: auto;
+    padding: 0;
     border: none;
   }
 
@@ -39,7 +40,13 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    width: 1220px;
+    margin-bottom: 30px;
     padding-top: 54px;
+    padding-right: 7.64%;
+    padding-left: 7.64%;
+  }
+
+  .page-header__nav {
+    width: 50%;
   }
 }
