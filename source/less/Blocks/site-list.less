@@ -58,9 +58,12 @@
 @media (min-width: @desktop-width) {
   .site-list__link {
     font-size: 20px;
-    color: @text-light;
 
-    &--current::after {
+    &--index-page {
+      color: @text-light;
+    }
+
+    &--index-page&--current::after {
       background-color: #ffffff;
     }
   }

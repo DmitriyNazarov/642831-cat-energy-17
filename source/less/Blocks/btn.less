@@ -1,8 +1,8 @@
 .btn {
   display: block;
-  padding: 11px 10px;
-  font-size: 14px;
-  line-height: 18px;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
   text-align: center;
   color: @text-light;
@@ -31,6 +31,12 @@
       color: rgba(68, 68, 68, 0.3);
     }
   }
+
+  &--smaller-font {
+    padding: 11px 10px;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -38,5 +44,11 @@
     padding: 16px;
     font-size: 20px;
     line-height: 20px;
+
+    &--fixed {
+      padding: 10px;
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }
