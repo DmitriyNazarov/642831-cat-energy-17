@@ -2,18 +2,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px 6.25%;
   height: 66px;
   border-bottom: 1px solid #e6e6e6;
 }
 
 .page-header__logo {
-  .clicked();
-
   &:hover,
   &:focus {
     opacity: 0.8;
   }
+
+  .clicked;
 }
 
 @media (min-width: @tablet-width) {
@@ -21,14 +21,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 708px;
-    margin: 0 auto;
     margin-bottom: 60px;
     padding-top: 24px;
+    padding-right: 3.91%;
+    padding-left: 3.91%;
   }
 
   .page-header__top-part {
     height: auto;
+    padding: 0;
     border: none;
   }
 
@@ -39,7 +40,13 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    width: 1220px;
+    margin-bottom: 30px;
     padding-top: 54px;
+    padding-right: 7.64%;
+    padding-left: 7.64%;
+  }
+
+  .page-header__nav {
+    width: 50%;
   }
 }

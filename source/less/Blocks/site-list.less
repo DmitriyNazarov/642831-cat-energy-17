@@ -1,11 +1,10 @@
 .site-list {
-  .list-reset();
+  .list-reset;
 }
 
 .site-list__link {
-  .clicked();
   display: block;
-  padding: 20px 23px;
+  padding: 23px 6.25%;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
@@ -15,9 +14,11 @@
   border-bottom: 1px solid #e6e6e6;
 
   &:hover,
-  &focus {
+  &:focus {
     opacity: 0.6;
   }
+
+  .clicked;
 }
 
 @media (min-width: @tablet-width) {
@@ -57,9 +58,12 @@
 @media (min-width: @desktop-width) {
   .site-list__link {
     font-size: 20px;
-    color: @text-light;
 
-    &--current::after {
+    &--index-page {
+      color: @text-light;
+    }
+
+    &--index-page&--current::after {
       background-color: #ffffff;
     }
   }

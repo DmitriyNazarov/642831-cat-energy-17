@@ -1,11 +1,18 @@
 .social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 0;
   padding-left: 0;
   list-style: none;
 }
 
 .social__link {
+  display: block;
+  width: 22px;
   font-size: 0;
+  line-height: 0;
+  text-align: center;
 
   & path,
   & circle {
@@ -19,8 +26,5 @@
     fill: #68b738;
   }
 
-  &:active path,
-  &:active circle {
-    opacity: 0.3;
-  }
+  .clicked;
 }

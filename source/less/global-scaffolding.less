@@ -12,6 +12,12 @@ a {
   text-decoration: none;
 }
 
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   min-width: 320px;
   font-family: @font-main;
@@ -33,4 +39,11 @@ input[type="radio"].visually-hidden {
   white-space: nowrap;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

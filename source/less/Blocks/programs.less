@@ -1,15 +1,15 @@
 .programs {
   margin-bottom: 20px;
-  padding: 0 20px;
+  padding: 0 6.25%;
 }
 
 .programs__list {
-  .list-reset();
+  .list-reset;
 }
 
 .programs__item {
   margin-bottom: 20px;
-  padding: 30px 21px 20px;
+  padding: 30px 7.14% 0;
   background-color: @bg-dark;
 
   &:last-child {
@@ -28,7 +28,7 @@
 }
 
 .programs__description {
-  margin-bottom: 20px;
+  margin: 0;
   padding-bottom: 25px;
   font-family: @font-second;
   color: @text-gray;
@@ -36,9 +36,73 @@
 }
 
 .programs__link {
-  .clicked();
+  display: block;
+  padding: 20px 0;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: @text-dark;
+
+  .clicked;
+}
+
+@media (min-width: @tablet-width) {
+  .programs {
+    padding-right: 3.91%;
+    margin-bottom: 50px;
+    padding-left: 3.91%;
+  }
+
+  .programs__item {
+    margin-bottom: 30px;
+    padding-top: 80px;
+    padding-right: calc(7.49% + 230px);
+    padding-bottom: 60px;
+    padding-left: 7.49%;
+
+    &--pro {
+      padding-right: calc(7.49% + 258px);
+    }
+  }
+
+  .programs__item-title {
+    padding-left: 0;
+    font-size: 36px;
+  }
+
+  .programs__description {
+    margin-bottom: 60px;
+    padding-bottom: 0;
+    border: none;
+  }
+
+  .programs__link {
+    padding: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programs {
+    margin-bottom: 80px;
+    padding-right: 7.64%;
+    padding-left: 7.64%;
+  }
+
+  .programs__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programs__item {
+    width: 46.72%;
+    margin-bottom: 0;
+    padding-right: 4.26%;
+    padding-left: 4.26%;
+  }
+
+  .programs__item-title {
+    padding-left: 164px;
+  }
 }
