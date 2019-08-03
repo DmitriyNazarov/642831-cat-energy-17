@@ -1,6 +1,6 @@
 .programs {
+  .container;
   margin-bottom: 20px;
-  padding: 0 6.25%;
 }
 
 .programs__list {
@@ -9,7 +9,7 @@
 
 .programs__item {
   margin-bottom: 20px;
-  padding: 30px 7.14% 0;
+  padding: 30px 20px 0;
   background-color: @bg-dark;
 
   &:last-child {
@@ -18,12 +18,10 @@
 }
 
 .programs__item-title {
+  .text(24px; 37px; normal);
   margin: 0;
   margin-bottom: 30px;
   padding-left: 92px;
-  font-size: 24px;
-  line-height: 37px;
-  font-weight: normal;
   text-transform: uppercase;
 }
 
@@ -48,20 +46,18 @@
 
 @media (min-width: @tablet-width) {
   .programs {
-    padding-right: 3.91%;
     margin-bottom: 50px;
-    padding-left: 3.91%;
   }
 
   .programs__item {
     margin-bottom: 30px;
     padding-top: 80px;
-    padding-right: calc(7.49% + 230px);
+    padding-right: 283px;
     padding-bottom: 60px;
-    padding-left: 7.49%;
+    padding-left: 53px;
 
     &--pro {
-      padding-right: calc(7.49% + 258px);
+      padding-right: 311px;
     }
   }
 
@@ -86,8 +82,6 @@
 @media (min-width: @desktop-width) {
   .programs {
     margin-bottom: 80px;
-    padding-right: 7.64%;
-    padding-left: 7.64%;
   }
 
   .programs__list {
@@ -98,8 +92,7 @@
   .programs__item {
     width: 46.72%;
     margin-bottom: 0;
-    padding-right: 4.26%;
-    padding-left: 4.26%;
+    padding-right: 53px;
   }
 
   .programs__item-title {
