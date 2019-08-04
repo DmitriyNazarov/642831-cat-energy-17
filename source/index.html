@@ -6,15 +6,41 @@
     <title>Кэт энерджи</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "pixel-perfect/cat-energy-index-mobile.png" );
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "pixel-perfect/cat-energy-index-tablet.png" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1300px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "pixel-perfect/cat-energy-index-desktop.png" );
+        }
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
   </head>
   <body>
-    <header class="page-header page-header--index-page">
+    <header class="page-header">
       <div class="page-header__wrap">
         <div class="page-header__top-part">
           <a class="page-header__logo">
             <img class="page-header__logo-img" src="#" alt="Логотип Cat Energy">
           </a>
-          <button class="page-header__toggle">Открыть меню</button>
+          <button class="page-header__toggle page-header__toggle--nojs">Открыть меню</button>
         </div>
         <nav class="page-header__nav">
           <ul class="site-list">
@@ -54,7 +80,7 @@
         </ul>
       </section>
       <section class="work-scheme">
-        <h2 class="work-scheme__title">Как это работает?</h2>
+        <h2 class="work-scheme__title">Как это работает</h2>
         <ol class="work-scheme__list">
           <li class="work-scheme__item work-scheme__item--nutrients">Функциональное питание содержит только полезные питательные вещества.</li>
           <li class="work-scheme__item work-scheme__item--powder-form">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
@@ -117,5 +143,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
