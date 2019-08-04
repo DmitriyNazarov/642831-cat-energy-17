@@ -1,32 +1,57 @@
 .main-products {
+  .container;
   margin-bottom: 30px;
-  padding-right: 6.25%;
-  padding-left: 6.25%;
   border-top: 1px solid #ededed;
 }
 
 .main-products__controls {
-  padding: 24px 0;
+  padding: 26px 0 22px;
 }
 
 .main-products__btn-show-more {
+  position: relative;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   padding: 0;
-  padding-top: 55px;
+  padding-top: 53px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  text-transform: uppercase;
   color: inherit;
   background-color: transparent;
   border: none;
+
+  .clicked;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 30px;
+    background-color: #d3d3d3;
+    transform: translateX(-50%);
+  }
 }
 
 .main-products__text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   font-family: @font-second;
   font-size: 12px;
   line-height: 16px;
@@ -37,8 +62,6 @@
 @media (min-width: @tablet-width) {
   .main-products {
     margin-bottom: 10px;
-    padding-right: 3.91%;
-    padding-left: 3.91%;
     border: none;
   }
 
@@ -47,7 +70,7 @@
     flex-direction: column;
     margin-top: 82px;
     margin-bottom: 58px;
-    padding: 54px 37px 40px;
+    padding: 50px 37px 40px;
     border: 1px solid #e6e6e6;
   }
 
@@ -56,10 +79,23 @@
     margin-bottom: 28px;
     padding-top: 110px;
     font-size: 20px;
+
+    &::before {
+      width: 60px;
+      top: 29px;
+    }
+
+    &::after {
+      height: 60px;
+    }
   }
 
   .main-products__text {
+    width: 170px;
+    margin-right: auto;
+    margin-left: auto;
     font-size: 16px;
+    line-height: 18px;
   }
 
   .main-products__btn-show-all {
@@ -70,7 +106,9 @@
 @media (min-width: @desktop-width) {
   .main-products {
     margin-bottom: 19px;
-    padding-right: 7.64%;
-    padding-left: 7.64%;
+  }
+
+  .main-products__controls {
+    padding-top: 54px;
   }
 }
