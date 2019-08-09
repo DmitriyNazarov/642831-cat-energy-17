@@ -8,11 +8,21 @@
     linear-gradient(#65a93c 305px, @bg-light 305px);
   background-repeat: no-repeat;
   background-position: center 0;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image:
+      url("../img/index-background-mobile@2x.jpg"),
+      linear-gradient(#65a93c 305px, @bg-light 305px);
+    background-size:
+      320px 305px,
+      auto auto;
+  }
 }
 
 .promo__title {
   .text(36px; 36px; normal);
-  margin: 0;
+  max-width: 390px;
+  margin: 0 auto;
   margin-bottom: 25px;
   text-align: center;
   color: @text-light;
@@ -20,7 +30,7 @@
 
 .promo__slogan {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -42,14 +52,15 @@
     position: relative;
     min-height: 807px;
     padding-top: 0;
-    padding-left: 12.71%;
     background-image: none;
   }
 
   .promo__title {
-    width: 480px;
+    width: 570px;
+    max-width: none;
     margin: 0;
     margin-bottom: 40px;
+    padding-left: 12.3%;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
@@ -58,6 +69,7 @@
 
   .promo__slogan {
     margin-bottom: 20px;
+    padding-left: 12.3%;
     font-size: 20px;
     line-height: 20px;
     color: @text-dark;
@@ -66,31 +78,34 @@
 
   .promo__btn {
     position: absolute;
-    bottom: 525px;
+    left: 12.3%;
+    bottom: 528px;
     width: 245px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .promo {
-    min-height: 558px;
+    min-height: 554px;
     padding-left: 80px;
   }
 
   .promo__title {
-    width: 42.1%;
-    padding-top: 83px;
+    width: 480px;
+    padding-top: 80px;
+    padding-left: 0;
   }
 
   .promo__slogan {
-    width: 42.1%;
+    width: 480px;
     margin-bottom: 54px;
+    padding-left: 0;
   }
 
   .promo__img {
     position: absolute;
     top: 0;
-    left: 46.53%;
+    left: 450px;
   }
 
   .promo__btn {

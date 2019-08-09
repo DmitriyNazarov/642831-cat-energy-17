@@ -40,7 +40,7 @@
     .text(18px; 25px; normal);
     position: relative;
     margin: 0;
-    padding: 12px 0;
+    padding: 8px 0;
     border: none;
 
     &--current::after {
@@ -57,6 +57,8 @@
 
 @media (min-width: @desktop-width) {
   .site-list__link {
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 20px;
 
     &--index-page {
@@ -66,5 +68,9 @@
     &--index-page&--current::after {
       background-color: #ffffff;
     }
+  }
+
+  .site-list__item {
+    margin-right: 32px;
   }
 }
