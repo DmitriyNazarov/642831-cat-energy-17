@@ -5,7 +5,8 @@
 
 .page-footer__logo {
   display: block;
-  min-height: 95px;
+  padding: 35px 0;
+  line-height: 0;
   text-align: center;
   border-bottom: 1px solid #d9d9d9;
 
@@ -17,6 +18,11 @@
   &:active .page-footer__logo-text {
     opacity: 0.3;
   }
+}
+
+.page-footer__logo-text {
+  width: 128px;
+  height: 24px;
 }
 
 .page-footer__social {
@@ -44,6 +50,8 @@
 
   .page-footer__logo {
     width: 132px;
+    padding: 0;
+    line-height: 0;
     text-align: left;
     min-height: 0;
     border: none;

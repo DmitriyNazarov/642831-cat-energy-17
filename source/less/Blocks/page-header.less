@@ -24,8 +24,18 @@
   .clicked;
 }
 
+.page-header__logo-img {
+  width: 191px;
+  height: 38px;
+}
+
 .page-header__promo {
   .container;
+}
+
+.promo__img {
+  width: 280px;
+  height: 271px;
 }
 
 .page-header__toggle {
@@ -101,10 +111,10 @@
 @media (min-width: @tablet-width) {
   .page-header {
     margin-bottom: 0;
-    padding-top: 30px;
+    padding-top: 24px;
 
     &--inner {
-      margin-bottom: 63px;
+      margin-bottom: 53px;
     }
   }
 
@@ -123,6 +133,11 @@
     border: none;
   }
 
+  .page-header__logo-img {
+    width: 173px;
+    height: 58px;
+  }
+
   .page-header__toggle {
     display: none;
   }
@@ -130,8 +145,13 @@
   .page-header__promo {
     width: 100%;
     margin: 0;
-    margin-top: 60px;
+    margin-top: 53px;
     padding: 0;
+  }
+
+  .promo__img {
+    width: 709px;
+    height: 609px;
   }
 }
 
@@ -139,7 +159,7 @@
   .page-header {
     position: relative;
     margin-bottom: 81px;
-    padding-top: 59px;
+    padding-top: 54px;
 
     &::after {
       content: "";
@@ -154,6 +174,14 @@
       background-repeat: no-repeat;
       background-position: 0 0;
       background-size: cover;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
+    }
+
+    &--inner {
+      margin-bottom: 71px;
     }
 
     &--inner::after {
@@ -161,11 +189,20 @@
     }
   }
 
+  .page-header__logo-img {
+    width: 202px;
+  }
+
   .page-header__nav {
     width: 50%;
   }
 
   .page-header__promo {
-    margin-top: 30px;
+    margin-top: 25px;
+  }
+
+  .promo__img {
+    width: 552px;
+    height: 499px;
   }
 }
