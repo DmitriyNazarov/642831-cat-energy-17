@@ -13,12 +13,14 @@
   color: @text-dark;
   border-bottom: 1px solid #e6e6e6;
 
-  &:hover,
-  &:focus {
+  &[href]:hover,
+  &[href]:focus {
     opacity: 0.6;
   }
 
-  .clicked;
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -71,6 +73,6 @@
   }
 
   .site-list__item {
-    margin-right: 32px;
+    margin-right: 34px;
   }
 }
