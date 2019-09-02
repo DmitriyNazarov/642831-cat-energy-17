@@ -1,0 +1,151 @@
+.additional-products {
+  .container;
+  margin-bottom: 34px;
+}
+
+.additional-products__title {
+  .title(24px; 24px; 34px);
+  position: relative;
+  display: inline-block;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    width: 3000px;
+    height: 3px;
+    background-color: #68b738;
+  }
+
+  &::before {
+    display: none;
+  }
+
+  &::after {
+    left: calc(100% + 22px);
+  }
+}
+
+.additional-products__catalog {
+  margin-bottom: 39px;
+}
+
+.additional-products__gift {
+  position: relative;
+  min-height: 289px;
+  padding: 187px 30px 30px;
+  font-family: @font-second;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: @text-light;
+  background-color: #70b447;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    width: 55px;
+    height: 60px;
+    transform: translateX(-50%);
+    background-image: url("../img/icon-gift.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .additional-products {
+    margin-bottom: 76px;
+  }
+
+  .additional-products__title {
+    margin-bottom: 80px;
+    padding-left: 38px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      display: block;
+      top: 22px;
+      right: calc(100% + 2px);
+    }
+
+    &::after {
+      top: 22px;
+      left: calc(100% + 38px);
+    }
+  }
+
+  .additional-products__catalog {
+    margin-bottom: 69px;
+  }
+
+  .additional-products__gift {
+    min-height: 200px;
+    padding: 72px 50px 50px 423px;
+    text-align: left;
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/gift-photo-tablet@2x.jpg");
+    }
+
+    &::before {
+      left: 91px;
+      transform: none;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-products {
+    margin-bottom: 85px;
+  }
+
+  .additional-products__title {
+    margin-bottom: 80px;
+    padding-left: 0;
+
+    &::before {
+      display: block;
+      right: calc(100% + 40px);
+    }
+
+    &::after {
+      left: calc(100% + 40px);
+    }
+  }
+
+  .additional-products__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additional-products__catalog {
+    width: 895px;
+    margin-bottom: 0;
+  }
+
+  .additional-products__gift {
+    width: 245px;
+    min-height: 289px;
+    padding: 187px 30px 30px;
+    text-align: center;
+
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

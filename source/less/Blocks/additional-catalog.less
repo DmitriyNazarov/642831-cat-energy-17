@@ -1,0 +1,120 @@
+.additional-catalog {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #cdcdcd;
+}
+
+.additional-catalog__item {
+  padding-top: 13px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.additional-catalog__item-title {
+  .title(16px; 16px; 14px);
+  text-transform: uppercase;
+}
+
+.additional-catalog__item-characteristics {
+  width: 100%;
+  margin-bottom: 14px;
+  font-family: @font-second;
+  font-size: 14px;
+  line-height: 14px;
+  border-collapse: collapse;
+}
+
+.additional-catalog__item-quantity {
+  padding: 0;
+}
+
+.additional-catalog__item-price {
+  padding: 0;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+
+@media (min-width: @tablet-width) {
+  .additional-catalog {
+    border: 1px solid #e6e6e6;
+  }
+
+  .additional-catalog__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 25px 37px 27px;
+    border-bottom: 1px solid #e6e6e6;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  .additional-catalog__item-title {
+    width: 316px;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional-catalog__item-characteristics {
+    width: 286px;
+    margin-top: 3px;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additional-catalog__item-quantity {
+    width: 192px;
+    text-align: right;
+  }
+
+  .additional-catalog__item-btn {
+    width: 100%;
+    margin-top: 23px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-catalog {
+    border: none;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .additional-catalog__item {
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 16px 0 15px 2px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .additional-catalog__item-title {
+    width: 285px;
+    margin-right: 38px;
+  }
+
+  .additional-catalog__item-characteristics {
+    width: 310px;
+  }
+
+  .additional-catalog__item-quantity {
+    width: auto;
+    text-align: left;
+  }
+
+  .additional-catalog__item-price {
+    width: 65px;
+    text-align: left;
+  }
+
+  .additional-catalog__item-btn {
+    width: 245px;
+    margin-top: 0;
+    margin-left: auto;
+  }
+}

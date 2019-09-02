@@ -29,7 +29,8 @@
 }
 
 .catalog-item__title {
-  .text(16px; 20px; normal);
+  .title(16px; 20px; 0);
+  width: 80px;
   margin: 0;
   text-transform: uppercase;
   color: @text-dark;
@@ -63,7 +64,7 @@
     flex-direction: column;
     justify-content: flex-end;
     min-height: 513px;
-    padding-bottom: 44px;
+    padding-bottom: 41px;
     background-image: linear-gradient(180deg, @bg-light 82px, @bg-dark 82px);
     border-bottom: none;
   }
@@ -92,6 +93,9 @@
   }
 
   .catalog-item__title {
+    width: 135px;
+    margin-right: auto;
+    margin-left: auto;
     font-size: 20px;
     text-align: center;
   }

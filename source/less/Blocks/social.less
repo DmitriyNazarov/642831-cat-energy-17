@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
   list-style: none;
 }
@@ -21,4 +22,44 @@
   }
 
   .clicked;
+
+  &--vk svg {
+    width: 22px;
+    height: 12px;
+  }
+
+  &--insta svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  &--fb svg {
+    width: 10px;
+    height: 19px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social__link {
+    width: 30px;
+
+    &--vk svg {
+      width: 29px;
+      height: 16px;
+    }
+
+    &--insta svg {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      text-align: left;
+    }
+
+    &--fb svg {
+      width: 15px;
+      height: 28px;
+    }
+  }
 }

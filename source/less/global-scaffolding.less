@@ -1,4 +1,5 @@
 html {
+  position: relative;
   box-sizing: border-box;
 }
 
@@ -19,6 +20,9 @@ svg {
 }
 
 body {
+  position: relative;
+  z-index: 0;
+  min-width: 320px;
   font-family: @font-main;
   font-size: 14px;
   line-height: 18px;
@@ -38,6 +42,26 @@ input[type="radio"].visually-hidden {
   white-space: nowrap;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
 }
 
 @media (min-width: @tablet-width) {

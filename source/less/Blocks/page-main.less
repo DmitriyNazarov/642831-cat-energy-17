@@ -1,22 +1,33 @@
+.page-main {
+  overflow: hidden;
+}
+
 .page-main__title {
   .container;
-  .text(36px; 60px; normal);
-  margin: 0;
-  padding-top: 15px;
-  padding-bottom: 28px;
+  .title(36px; 60px; 28px);
+
+  &--form {
+    margin-bottom: 25px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .page-main__title {
     margin-bottom: 83px;
-    padding-top: 0;
-    padding-bottom: 0;
     font-size: 60px;
+
+    &--form {
+      margin-bottom: 55px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-main__title {
-    margin-bottom: 84px;
+    margin-bottom: 82px;
+
+    &--form {
+      margin-bottom: 55px;
+    }
   }
 }

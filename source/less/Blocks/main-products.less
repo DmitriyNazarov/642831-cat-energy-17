@@ -1,11 +1,12 @@
 .main-products {
-  .container;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+  padding-bottom: 24px;
   border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
 }
 
 .main-products__controls {
-  padding: 26px 0 22px;
+  padding-top: 26px;
 }
 
 .main-products__btn-show-more {
@@ -61,7 +62,9 @@
 
 @media (min-width: @tablet-width) {
   .main-products {
+    .container;
     margin-bottom: 10px;
+    padding-bottom: 0;
     border: none;
   }
 
@@ -105,7 +108,7 @@
 
 @media (min-width: @desktop-width) {
   .main-products {
-    margin-bottom: 19px;
+    margin-bottom: 16px;
   }
 
   .main-products__controls {
