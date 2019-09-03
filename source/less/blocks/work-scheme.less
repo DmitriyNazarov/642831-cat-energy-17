@@ -142,14 +142,20 @@
   }
 
   .work-scheme__list {
+    justify-content: flex-start;
     padding-left: 3px;
   }
 
   .work-scheme__item {
     width: 20.13%;
     margin: 0;
+    margin-right: 79px;
     padding-right: 0;
     padding-left: 0;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
 
     &::after {
       width: 50%;

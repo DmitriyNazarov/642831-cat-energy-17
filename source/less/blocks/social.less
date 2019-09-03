@@ -1,11 +1,21 @@
 .social {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 0;
+  margin-right: -32px;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
+}
+
+.social__item {
+  margin-right: 32px;
+  margin-bottom: 10px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
 .social__link {
@@ -40,6 +50,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .social {
+    margin-right: -24px;
+  }
+
+  .social__item {
+    margin-right: 24px;
+  }
+
   .social__link {
     width: 30px;
 
