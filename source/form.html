@@ -44,10 +44,10 @@
           <fieldset class="form__group form__group--main">
             <legend class="visually-hidden">Данные вашего кота</legend>
             <label class="form__item">Имя:*
-              <input class="form__field" type="text" name="name" placeholder="Барсик" required>
+              <input class="form__field" type="text" name="name" placeholder="Барсик" pattern="^([A-Za-zА-Яа-яЁё0-9\-]+)$">
             </label>
             <label class="form__item">Вес (кг):*
-              <input class="form__field" type="number" name="weight" placeholder="7" min="0" max="100" required>
+              <input class="form__field" type="number" name="weight" placeholder="7" min="0" max="99">
             </label>
             <label class="form__item">Возраст (лет):
               <input class="form__field" type="number" name="age" placeholder="7" min="0" max="30">
@@ -81,13 +81,13 @@
           <legend class="form__group-title">Контактные данные (владельца кота)</legend>
           <div class="form__group-wrap">
             <label class="form__item form__item--owner">E-mail:*
-              <input class="form__field form__field--icon" type="email" name="e-mail" placeholder="Kuklachev@gmail.com" pattern="^([0-9a-z_/./-]+@[a-zA-Z/-]+\.[a-zA-Z]{2,6})$" required>
+              <input class="form__field form__field--icon" type="email" name="e-mail" placeholder="Kuklachev@gmail.com" pattern="^([0-9a-z_\.\-]+@[a-zA-Z/-]+\.[a-zA-Z]{2,6})$">
               <svg class="form__field-icon form__field-icon--mail" width="17" height="13">
                 <use xlink:href="img/sprite.svg#icon-mail"></use>
               </svg>
             </label>
             <label class="form__item form__item--owner">Телефон:*
-              <input class="form__field form__field--icon form__field--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" pattern="^(8|\+7)\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$" required>
+              <input class="form__field form__field--icon form__field--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" pattern="^(8|\+7)\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$">
               <svg class="form__field-icon form__field-icon--phone" width="20" height="20">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
